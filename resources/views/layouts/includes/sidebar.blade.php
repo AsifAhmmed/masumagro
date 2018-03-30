@@ -90,6 +90,7 @@
         </li>
         @endif
 
+        <!--This item has only been removed from UI-->
         <!--@if(Helpers::has_permission(Auth::user()->id, 'manage_transfer'))
         <li <?/*= $menu == 'transfer' ? ' class="active"' : ''*/?> >
           <a href="{{url('transfer/list')}}">

@@ -46,7 +46,7 @@
                                 <input type="text" value="{{old('phone')}}" class="form-control" name="phone">
                               </div>
                             </div>
-                           <!--  <div class="form-group">
+                           <!-- controller also changed <div class="form-group">
                               <label class="col-sm-4 control-label" for="inputEmail3">{{ trans('message.form.vat_no') }}</label>
 
                               <div class="col-sm-8">
@@ -62,7 +62,8 @@
                                   </div>
                                 </div>
                                 
-                             <!--    <div class="form-group">
+                             <!-- controller also changed    
+                             <div class="form-group">
                                   <label class="col-sm-4 control-label require" for="inputEmail3">{{ trans('message.invoice.city') }}</label>
 
                                   <div class="col-sm-8">
@@ -110,7 +111,7 @@
                                     <input type="text" class="form-control" id="ship_street" name="ship_street">
                                   </div>
                                 </div>
-                              <!--   
+                              <!--   controller also changed
                                 <div class="form-group">
                                   <label class="col-sm-4 control-label require" for="inputEmail3">{{ trans('message.invoice.city') }}</label>
 

@@ -3,7 +3,7 @@
     <!-- Main content -->
     <section class="content">
       <!-- Default box -->
-        <div class="box">
+        <!-- <div class="box">
            <div class="panel-body">
                 <ul class="nav nav-tabs cus" role="tablist">
                     <li class="active">
@@ -24,12 +24,12 @@
                </ul>
               <div class="clearfix"></div>
            </div>
-        </div>
+        </div> -->
 
         <h3>{{$customerData->name}}</h3>
         <div class="box">
           <div class="nav-tabs-custom">
-            <ul class="nav nav-tabs" id="tabs" style="font-size:12px">
+            <!-- <ul class="nav nav-tabs" id="tabs" style="font-size:12px">
               <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="false">{{ trans('message.table.general_settings') }}</a></li>
               <li><a href="#tab_2" data-toggle="tab" aria-expanded="false">{{ trans('message.invoice.branch') }}</a></li>
               @if(!empty($customerData->password))
@@ -37,7 +37,7 @@
               @else
               <li><a href="#tab_3" data-toggle="tab" aria-expanded="false">{{ trans('message.form.set_password') }}</a></li>
               @endif
-            </ul>
+            </ul> -->
             <div class="tab-content">
               <div class="tab-pane fade in active" id="tab_1">
                 <div class="row">
@@ -75,14 +75,14 @@
                               <span id="val_name" style="color: red"></span>
                             </div>
                           </div>
-                          <div class="form-group">
+                       <!--    <div class="form-group">
                             <label class="col-sm-4 control-label" for="inputEmail3">{{ trans('message.form.vat_no') }}</label>
 
                             <div class="col-sm-7">
                               <input type="text" placeholder="{{ trans('message.form.vat_no') }}" class="form-control valdation_check" id="vat_no" name="vat_no" value="{{$customerData->vat_no}}">
                               <span id="val_name" style="color: red"></span>
                             </div>
-                          </div>
+                          </div> -->
 
                           <div class="form-group">
                             <label class="col-sm-4 control-label" for="inputEmail3">{{ trans('message.form.status') }}</label>

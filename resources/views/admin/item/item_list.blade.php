@@ -10,10 +10,11 @@
              <div class="top-bar-title padding-bottom">{{ trans('message.table.item') }}</div>
             </div> 
             @if(Helpers::has_permission(Auth::user()->id, 'add_item'))
+            <!-- this comment section can import item from excelfile  -->
 			<div class="col-md-6 col-sm-9 col-xs-12">
-				<div class="col-md-6 col-sm-6 col-xs-12 top-cusTom-btn">
+				<!-- <div class="col-md-6 col-sm-6 col-xs-12 top-cusTom-btn">
 					<a href="{{ URL::to('itemimport') }}" class="btn btn-block btn-default btn-flat btn-border-purple"><span class="fa fa-upload"> &nbsp;</span>{{ trans('message.extra_text.import_new_item') }}</a>
-				</div>
+				</div> -->
 				<div class="col-md-6 col-sm-6 col-xs-12 top_BTN">
 					<a href="{{ url('create-item/item') }}" class="btn btn-block btn-default btn-flat btn-border-orange"><span class="fa fa-plus"> &nbsp;</span>{{ trans('message.extra_text.add_new_item') }}</a>
 				</div>
@@ -63,9 +64,9 @@
       <!-- Default box -->
       <div class="box">
       
-            <div class="box-header">
+            <!-- <div class="box-header">
               <a href="{{ URL::to('itemdownloadcsv/csv') }}"><button class="btn btn-default btn-flat btn-border-info"><span class="fa fa-download"> &nbsp;</span>{{ trans('message.table.download_csv') }}</button></a>
-            </div>
+            </div> -->
   
             <!-- /.box-header -->
             <div class="box-body">

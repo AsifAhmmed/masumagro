@@ -64,21 +64,21 @@ class CustomerController extends Controller
             'name' => 'required|min:3',
             'email' => 'required|email|unique:debtors_master,email',
             'bill_street'=>'required',
-            'bill_city'=>'required',
-            'bill_state'=>'required',
-            'bill_country_id'=>'required',
+            // 'bill_city'=>'required',
+            // 'bill_state'=>'required',
+            // 'bill_country_id'=>'required',
             'ship_street'=>'required',
-            'ship_city'=>'required',
-            'ship_state'=>'required',
-            'ship_country_id'=>'required'
+            // 'ship_city'=>'required',
+            // 'ship_state'=>'required',
+            // 'ship_country_id'=>'required'
         ]);
         
         $data['name'] = $request->name;
         $data['email'] = $request->email;
         $data['phone'] = $request->phone;
-        $data['vat_no'] = $request->vat_no;
-        //$data['sales_type'] = $request->sales_type;
-        $data['created_at'] = date('Y-m-d H:i:s');
+        // $data['vat_no'] = $request->vat_no;
+        // //$data['sales_type'] = $request->sales_type;
+        // $data['created_at'] = date('Y-m-d H:i:s');
 
         $id = DB::table('debtors_master')->insertGetId($data);
 
@@ -87,15 +87,15 @@ class CustomerController extends Controller
             $data2['debtor_no'] = $id;
             $data2['br_name'] = $request->name;
             $data2['billing_street'] = $request->bill_street;
-            $data2['billing_city'] = $request->bill_city;
-            $data2['billing_state'] = $request->bill_state;
-            $data2['billing_zip_code'] = $request->bill_zipCode;
-            $data2['billing_country_id'] = $request->bill_country_id;
+            // $data2['billing_city'] = $request->bill_city;
+            // $data2['billing_state'] = $request->bill_state;
+            // $data2['billing_zip_code'] = $request->bill_zipCode;
+            // $data2['billing_country_id'] = $request->bill_country_id;
             $data2['shipping_street'] = $request->ship_street;
-            $data2['shipping_city'] = $request->ship_city;
-            $data2['shipping_state'] = $request->ship_state;
-            $data2['shipping_zip_code'] = $request->ship_zipCode;
-            $data2['shipping_country_id'] = $request->ship_country_id;
+            // $data2['shipping_city'] = $request->ship_city;
+            // $data2['shipping_state'] = $request->ship_state;
+            // $data2['shipping_zip_code'] = $request->ship_zipCode;
+            // $data2['shipping_country_id'] = $request->ship_country_id;
 
             DB::table('cust_branch')->insert($data2);
 

@@ -46,23 +46,23 @@
                                 <input type="text" value="{{old('phone')}}" class="form-control" name="phone">
                               </div>
                             </div>
-                            <div class="form-group">
+                           <!--  <div class="form-group">
                               <label class="col-sm-4 control-label" for="inputEmail3">{{ trans('message.form.vat_no') }}</label>
 
                               <div class="col-sm-8">
                                 <input type="text" value="{{old('vat_no')}}" class="form-control" name="vat_no">
                               </div>
-                            </div>
+                            </div> -->
 
                             <div class="form-group">
-                                  <label class="col-sm-4 control-label require" for="inputEmail3">{{ trans('message.invoice.street') }}</label>
+                                  <label class="col-sm-4 control-label require" for="inputEmail3">{{ trans('message.invoice.address') }}</label>
 
                                   <div class="col-sm-8">
                                     <input type="text" class="form-control" name="bill_street" value="{{old('bill_street')}}" id="bill_street">
                                   </div>
                                 </div>
                                 
-                                <div class="form-group">
+                             <!--    <div class="form-group">
                                   <label class="col-sm-4 control-label require" for="inputEmail3">{{ trans('message.invoice.city') }}</label>
 
                                   <div class="col-sm-8">
@@ -97,20 +97,20 @@
                                     @endforeach
                                     </select>
                                   </div>
-                                </div>
+                                </div> -->
                           </div>
                           
                           <div class="col-md-6">
                               <h4 class="text-info text-center">{{ trans('message.invoice.shipping_address') }} <button id="copy" class="btn btn-default btn-xs" type="button">{{ trans('message.table.copy_address') }}</button></h4>
 
                                 <div class="form-group">
-                                  <label class="col-sm-4 control-label require" for="inputEmail3">{{ trans('message.invoice.street') }}</label>
+                                  <label class="col-sm-4 control-label require" for="inputEmail3">{{ trans('message.invoice.address') }}</label>
 
                                   <div class="col-sm-8">
                                     <input type="text" class="form-control" id="ship_street" name="ship_street">
                                   </div>
                                 </div>
-                                
+                              <!--   
                                 <div class="form-group">
                                   <label class="col-sm-4 control-label require" for="inputEmail3">{{ trans('message.invoice.city') }}</label>
 
@@ -145,7 +145,7 @@
                                     @endforeach
                                     </select>
                                   </div>
-                                </div>
+                                </div> -->
                           </div>
                           
                         </div>

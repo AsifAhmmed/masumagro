@@ -90,13 +90,13 @@
         </li>
         @endif
 
-        @if(Helpers::has_permission(Auth::user()->id, 'manage_transfer'))
-        <li <?= $menu == 'transfer' ? ' class="active"' : ''?> >
+        <!--@if(Helpers::has_permission(Auth::user()->id, 'manage_transfer'))
+        <li <?/*= $menu == 'transfer' ? ' class="active"' : ''*/?> >
           <a href="{{url('transfer/list')}}">
             <i class="fa fa-truck"></i> <span>{{ trans('message.sidebar.stock-move-list') }}</span>
           </a>
         </li>
-        @endif
+        @endif-->
 
         @if(Helpers::has_permission(Auth::user()->id, 'manage_report'))
         <li <?= $menu == 'report' ? ' class="treeview active"' : 'treeview'?> >
